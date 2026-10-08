@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import "datatables.net-bs5/css/dataTables.bootstrap5.min.css";
+@import "datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css";
+@import 'datatables.net-select-bs5/css/select.bootstrap5.css';
+main .container {
+    padding: 50px;
+}
+
+.dataTables_wrapper,
+table {
+    width: 100% !important;
+}
+
+.module-container {
+    display: flex;
+}
+
+.module-container main {
+    width: 100%;
+    float: right;
+}
+
+.nav-link.active {
+    font-weight: 900;
+}
+
+.nav-container {
+    width: 12%;
+    /* position: fixed; */
+    height: 100vh;
+}
+
+
+/* ----------dropdown sidebar-------------- */
+
+
+/* Menu */
+
+.menu li {
+    cursor: pointer;
+    position: relative;
+}
+
+.menu li:hover {
+    background: #f0f0f0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.menu li a i {
+    margin-right: 10px;
+}
+
+
+/* Submenu */
+
+.submenu {
+    list-style: none;
+    padding-left: 0px;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* .submenu li {
+    padding: 8px 0;
+} */
+
+.submenu li a {
+    font-size: 14px;
+    color: #555;
+}
+
+.submenu li a:hover {
+    color: #007bff;
+}
+
+
+/* Active Class */
+
+.menu li.active .submenu {
+    display: block;
+}
+
+
+/* Arrow Animation */
+
+.menu li a .fa-chevron-down {
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu li.active a .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+
+/* li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+} */
